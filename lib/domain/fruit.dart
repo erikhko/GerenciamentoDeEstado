@@ -1,7 +1,7 @@
-class Fruit{
-  late String name;
-  late String price;
+class Fruit {
+  String name;
+  String price;
 
-  Fruit({required this.name, required this.price});
+  Fruit(this.name, this.price);
 
 }

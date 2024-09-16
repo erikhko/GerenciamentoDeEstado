@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
+
 import '../../domain/fruit.dart';
 
-class FruitController extends ChangeNotifier{
+class FruitChangeNotifyController extends ChangeNotifier {
   final List<Fruit> _fruits = [];
 
-  List<Fruit> get fruit => _fruits;
+  List<Fruit> get fruits => _fruits;
 
-  void addFruit(Fruit value){
+  void addFruit(Fruit value) {
     _fruits.add(value);
     notifyListeners();
   }
@@ -15,4 +16,5 @@ class FruitController extends ChangeNotifier{
     _fruits.remove(value);
     notifyListeners();
   }
+
 }
